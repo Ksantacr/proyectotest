@@ -1,4 +1,51 @@
-.contenedor {
+h1 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.2em;
+}
+header {
+  border: 1px dashed #000;
+  postion: relative;
+  height: 120px;
+  top: 50%;
+}
+header .avatar {
+  position: absolute;
+  border: 1px dashed #000;
+  top: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+}
+header .logo {
+  border: 1px dashed #000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.opciones {
+  position: fixed;
+  bottom: 0;
+}
+.opciones li {
+  display: inline-block;
+}
+.opciones li a {
+  color: #000;
+  background: #00dbff;
+  padding: 1em;
   margin: 0;
-  padding: 0;
+  border-radius: 0.3em;
+  transition: all 1.5s;
+}
+.opciones li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
