@@ -4,26 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/estilos.css">
 	<title>Factor P+</title>
 </head>
 <body>
-	
-	<header>
-		<div class="logo">
+	<header class="row">
+		<div class="logo col-xs-4 col-lg-3">
 			<img src="imagenes/logo.png" alt="logo"/>
 		</div>
-		<div class="titulo">
+		<div class="titulo col-xs-4 col-lg-6">
 			<h1>Bienvenido a la beta de Factor P!</h1>
 			<h2><a href="#">ESPOL</a></h2>
 		</div>
-		<div class="avatar">
+		<div class="avatar col-xs-4 col-lg-3">
 			<img src="imagenes/avatar.jpg" alt="Kevin"/>
 			<p><a href="#">Configurar</a></p>
 		</div>
 	</header>
-	<aside>
-		<div class="informacion">
+	<div class="contenedor row">
+	<!--<aside class="row">-->
+		<div class="informacion col-xs-4">
 			<h3>Datos Personales</h3>
 			<p>Facultad <strong>EDCOM</strong> </p>
 			<p>Carrera <strong>Diseño Web</strong></p>
@@ -37,27 +38,27 @@
 			<p><a href="#">Youtube</a></p>
 
 		</div>
-	</aside>
-	<form action="" style="display:none">
-		<div class="formulario">
+	<!--</aside>
+	<form action="" style="display:none row">
+		<div class="formulario col-xs-12">
 			<p>Materia : <input class="materia"></input></p>
 			<p>Profesor : <input class="profesor"></input></p>
 			<p>Aula : <input class="aula"></input></p>
 		</div>
 	</form>
-
-	<article>
-		<div class="buscar">
+	-->
+	<article class="materias col-xs-8">
+		<!--<div class="buscar">
 			<input type="text" placeholder="Espol,Edcom,DiseñoWeb" required/>
 			<p><a href="#">Agregar Materia</a></p>
 		</div>
-		<section id="materias">
+		-->
 			
 			<div class="datosMateria">
 				<h3>
-					Nombre : <strong> Diseño Sitios Web</strong>
-					Profesor : <strong> Xavier Zavala</strong>
-					Aula : <strong> C-301</strong>
+					<p>Nombre : <strong> Diseño Sitios Web</strong></p>
+					<p>Profesor : <strong> Xavier Zavala</strong></p>
+					<p>Aula : <strong> C-301</strong></p>
 				</h3>
 				<p class="tiempo">faltan <strong>20</strong>min para que empieze la clase!</p>
 				<a href="#">ver horario completo!</a>
@@ -65,9 +66,9 @@
 
 			<div class="datosMateria">
 				<h3>
-					Nombre : <strong> Matemáticas</strong>
-					Profesor : <strong> Johnny Pambabay</strong>
-					Aula : <strong> B-103</strong>
+					<p>Nombre : <strong> Matemáticas</strong></p>
+					<p>Profesor : <strong> Johnny Pambabay</strong></p>
+					<p>Aula : <strong> B-103</strong></p>
 				</h3>
 				<p class="tiempo">faltan <strong>3</strong>horas para que empieze la clase!</p>
 				<a href="#">ver horario completo!</a>
@@ -75,23 +76,23 @@
 
 			<div class="datosMateria">
 				<h3>
-					Nombre : <strong> Color Digital</strong>
-					Profesor : <strong> Monica Robles</strong>
-					Aula : <strong> B-201</strong>
+					<p>Nombre : <strong> Color Digital</strong></p>
+					<p>Profesor : <strong> Monica Robles</strong></p>
+					<p>Aula : <strong> B-201</strong></p>
 				</h3>
 				<p class="tiempo">faltan <strong>5</strong>horas para que empieze la clase!</p>
 				<a href="#">ver horario completo!</a>
 			</div>
 
-		</section>
 	</article>
-	<footer>
-		<h3>
-		<span><strong>FactorP!</strong></span>
-		<span>by ksantacr</span>
+	</div>
+	<!--<footer class="row">-->
+	<div class="info">
+		<h3 class="col-xs-12" align="center">
+		FactorP!
+		by ksantacr
 		</h3>
-	</footer>
-
-	
+	<!--</footer>-->
+	</div>
 </body>
 </html>
